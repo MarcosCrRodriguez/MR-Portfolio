@@ -1,0 +1,143 @@
+:root {
+  --nz-bg: #f1eaff;
+  --nz-gap-desktop: 44px;
+  --nz-gap-mobile: 20px;
+  --nz-font-logo: 700 2.1rem/1 "Georgia", serif;
+}
+
+.nz-navbar {
+  background: var(--nz-bg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.nz-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nz-logo {
+  font: var(--nz-font-logo);
+  color: #1d1d1d;
+}
+
+.logo-img {
+  margin: -16px 0 !important;
+  height: 70px;
+  object-fit: contain;
+}
+
+.nz-menu {
+  display: flex;
+  gap: var(--nz-gap-desktop);
+  font-weight: 600;
+}
+
+.nz-menu a {
+  color: #1d1d1d;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.2s;
+}
+.nz-menu a:hover {
+  color: #6c63ff;
+}
+
+.nz-icons {
+  display: flex;
+  align-items: center;
+  gap: var(--nz-gap-desktop);
+}
+.nz-icons a {
+  font-size: 1.4rem;
+  color: #1d1d1d;
+  transition: 0.2s;
+}
+.nz-icons a:hover {
+  color: #6c63ff;
+}
+
+.nz-burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #1d1d1d;
+}
+
+/* Overlay Mobile */
+.nz-overlay {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px;
+}
+.nz-close {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.nz-overlay-menu {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font: var(--nz-font-logo);
+}
+.nz-overlay-menu a {
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.3rem;
+  transition: 0.2s;
+}
+.nz-overlay-menu a:hover {
+  color: #6c63ff;
+}
+
+.nav-link-button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  color: #1d1d1d;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.nav-link-button:hover {
+  color: #6c63ff;
+}
+
+/* Mobile menu */
+.nz-overlay-menu .nav-link-button {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+  .nz-menu {
+    display: none;
+  }
+  .nz-icons {
+    gap: var(--nz-gap-mobile);
+  }
+  .nz-burger {
+    display: block;
+  }
+}

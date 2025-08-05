@@ -1,0 +1,74 @@
+.home-section {
+  padding: 80px 24px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #1d1d1d;
+}
+
+.home-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 32px;
+  border: 3px solid #dbcbff;
+}
+
+.home-name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-family: "Morison", Georgia, serif;
+}
+
+.home-subtitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.home-description {
+  max-width: 600px;
+  margin: 0 auto 32px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.home-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.home-button.primary {
+  background-color: #6c63ff;
+  color: white;
+  cursor: pointer;
+}
+
+.home-button.primary:hover {
+  background-color: #574fd6;
+}
+
+.home-button.secondary {
+  border: 2px solid #6c63ff;
+  color: #6c63ff;
+}
+
+.home-button.secondary:hover {
+  background-color: #f1eaff;
+}
