@@ -27,6 +27,13 @@
   opacity: 0.8;
 }
 
+.lang-circle.active {
+  background-color: #847dff; /* tono más claro o diferente */
+  transform: scale(1.15); /* más grande que el normal */
+  opacity: 1;
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.5);
+}
+
 @media (max-width: 1280px) {
   .lang-circle {
     width: 35px;
