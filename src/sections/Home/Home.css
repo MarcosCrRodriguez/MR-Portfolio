@@ -74,3 +74,12 @@
 .home-button.secondary:hover {
   background-color: #f1eaff;
 }
+
+@media (max-width: 768px) {
+  .home-section {
+    padding: 60px 24px;
+  }
+  .home-description {
+    font-size: 1rem;
+  }
+}

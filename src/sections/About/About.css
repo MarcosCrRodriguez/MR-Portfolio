@@ -35,7 +35,7 @@
 }
 
 .skill-category {
-  width: 220px;
+  width: 120px !important;
   text-align: left;
 }
 .skill-category h3 {
@@ -75,5 +75,28 @@
   .skill-category {
     width: 140px;
     text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 1px 24px;
+    background-color: #fff;
+    color: #1d1d1d;
+    text-align: center;
+  }
+
+  .about-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .skill-category li {
+    font-size: 1rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
   }
 }

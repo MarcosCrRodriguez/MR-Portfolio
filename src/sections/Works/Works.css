@@ -122,3 +122,9 @@
 .fade-out {
   animation: fadeOutSlide 0.6s ease forwards;
 }
+
+@media (max-width: 768px) {
+  .projects-description {
+    font-size: 1rem;
+  }
+}

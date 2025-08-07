@@ -95,8 +95,8 @@ const projects = [
   },
   {
     title: {
-      es: "Sitio institucional PAL",
-      en: "PAL Institutional Website",
+      es: "Sitio institucional - PAL",
+      en: "PAL - Institutional Website",
     },
     description: {
       es: "Sitio web institucional para la organización PAL, mostrando su misión, visión y servicios.",

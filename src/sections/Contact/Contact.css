@@ -85,4 +85,8 @@
   .contact-form textarea {
     padding-right: 1px;
   }
+
+  .contact-description {
+    font-size: 1rem;
+  }
 }
