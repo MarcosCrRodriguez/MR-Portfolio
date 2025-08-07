@@ -60,9 +60,9 @@ const About = () => {
             <li>
               <FaCss3Alt /> CSS
             </li>
-            {/* <li>
+            <li>
               <FaJava /> Java
-            </li> */}
+            </li>
             <li>
               <span style={{ fontWeight: "bold" }}>C#</span> C#
             </li>
@@ -79,6 +79,9 @@ const About = () => {
         <div className="skill-category">
           <h3>Frameworks / Librerías</h3>
           <ul>
+            <li>
+              <FaReact /> React Native
+            </li>
             <li>
               <FaReact /> React
             </li>

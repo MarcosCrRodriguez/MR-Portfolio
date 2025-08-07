@@ -39,8 +39,7 @@ const projects = [
   },
   {
     title: "Clínica Salud",
-    description:
-      "Sistema web para turnos y administración de clínica médica, permitiendo a los pacientes reservar turnos y a los médicos gestionar sus horarios.",
+    description: "Sistema web para turnos y administración de clínica médica", // , permitiendo a los pacientes reservar turnos y a los médicos gestionar sus horarios.
     image: clinicasaludImg,
     link: "https://clinicasalud-app.web.app/home",
   },
