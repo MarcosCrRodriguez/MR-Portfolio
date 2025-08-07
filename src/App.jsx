@@ -6,12 +6,13 @@ import About from "./sections/About/About";
 import Works from "./sections/Works/Works";
 import Services from "./sections/Services/Services";
 import Contact from "./sections/Contact/Contact";
+import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
 
 function App() {
   return (
     <>
       <Navbar />
-      {/* Acá van las secciones con sus IDs */}
+      <LanguageSwitcher />
       <Home />
       <About />
       <Works />

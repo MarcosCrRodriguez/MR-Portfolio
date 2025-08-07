@@ -1,3 +1,4 @@
+// src/sections/About/About.jsx
 import React from "react";
 import "./About.css";
 import {
@@ -24,29 +25,19 @@ import {
   SiPostman,
   SiBootstrap,
 } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="about-section">
-      <h2 className="about-title">Acerca de mí</h2>
-      <p className="about-description">
-        Soy un desarrollador Full-Stack apasionado, con una sólida base
-        construida a través de años de estudio constante y experiencia práctica.
-        Aunque aún no cuento con una trayectoria laboral extensa en el ámbito
-        profesional, he completado con éxito numerosos proyectos personales y
-        colaborativos, donde he perfeccionado mis habilidades tanto en el
-        desarrollo front-end como back-end.
-        <br />
-        <br />
-        Mi entusiasmo por el desarrollo Full-Stack se refleja en la dedicación
-        que aporto a cada proyecto y en mi búsqueda constante de excelencia en
-        cada etapa del proceso.
-      </p>
+      <h2 className="about-title">{t("about.title")}</h2>
+      <p className="about-description">{t("about.description")}</p>
 
       <div className="about-skills">
-        {/* Lenguajes */}
         <div className="skill-category">
-          <h3>Lenguajes</h3>
+          <h3>{t("about.skills.languages")}</h3>
           <ul>
             <li>
               <FaJs /> JavaScript
@@ -66,18 +57,14 @@ const About = () => {
             <li>
               <span style={{ fontWeight: "bold" }}>C#</span> C#
             </li>
-            {/* <li>
-              <SiPhp /> PHP
-            </li> */}
             <li>
               <SiPython /> Python
             </li>
           </ul>
         </div>
 
-        {/* Frameworks y Librerías */}
         <div className="skill-category">
-          <h3>Frameworks / Librerías</h3>
+          <h3>{t("about.skills.frameworks")}</h3>
           <ul>
             <li>
               <FaReact /> React Native
@@ -100,13 +87,9 @@ const About = () => {
           </ul>
         </div>
 
-        {/* Bases de Datos */}
         <div className="skill-category">
-          <h3>Bases de Datos</h3>
+          <h3>{t("about.skills.databases")}</h3>
           <ul>
-            {/* <li>
-              <SiMongodb /> MongoDB
-            </li> */}
             <li>
               <SiPostgresql /> PostgreSQL
             </li>
@@ -122,9 +105,8 @@ const About = () => {
           </ul>
         </div>
 
-        {/* Herramientas */}
         <div className="skill-category">
-          <h3>Herramientas</h3>
+          <h3>{t("about.skills.tools")}</h3>
           <ul>
             <li>
               <FaGitAlt /> Git

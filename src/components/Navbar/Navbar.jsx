@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 import "./Navbar.css";
 
 import mrLogo from "../../assets/images/mr-logo.png";
@@ -15,20 +16,21 @@ const scrollToId = (id) => {
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   const navItems = [
-    { label: "Inicio", id: "home" },
-    { label: "Acerca de mí", id: "about" },
-    { label: "Trabajos", id: "works" },
-    { label: "Servicios", id: "services" },
-    { label: "Contacto", id: "contact" },
+    { label: t("navbar.home"), id: "home" },
+    { label: t("navbar.about"), id: "about" },
+    { label: t("navbar.works"), id: "works" },
+    { label: t("navbar.services"), id: "services" },
+    { label: t("navbar.contact"), id: "contact" },
   ];
 
   return (
     <>
       <header className="nz-navbar">
         <div className="nz-inner">
-          {/* Logo / título */}
+          {/* Logo */}
           <div className="navbar-logo">
             <img src={mrLogo} alt="Logo MR" className="logo-img" />
           </div>
@@ -74,7 +76,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Menú hamburguesa (mobile) */}
+          {/* Menú hamburguesa */}
           <button
             className="nz-burger"
             aria-label="Abrir menú"

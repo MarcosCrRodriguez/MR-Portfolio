@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import mrLogo from "../../assets/images/mr-logo.png";
+import { useTranslation } from "react-i18next";
 
 const scrollToId = (id) => {
   const element = document.getElementById(id);
@@ -17,6 +18,8 @@ const FooterLink = ({ id, children }) => (
 );
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       {/* MR centrado arriba */}
@@ -24,24 +27,23 @@ const Footer = () => {
         <div className="footer-title">
           <img src={mrLogo} alt="Logo MR" className="logo-img" />
         </div>
-        <p className="footer-subtitle">Portfolio Personal</p>
-        <div className="footer-icons"></div>
+        <p className="footer-subtitle">{t("footer.subtitle")}</p>
       </div>
 
       {/* Secciones de enlaces */}
       <div className="footer-sections">
         <div className="footer-column">
-          <h3>Opciones</h3>
+          <h3>{t("footer.sections.options")}</h3>
           <hr className="footer-divider" />
-          <FooterLink id="home">Inicio</FooterLink>
-          <FooterLink id="about">Acerca de mí</FooterLink>
-          <FooterLink id="works">Trabajos</FooterLink>
-          <FooterLink id="services">Servicios</FooterLink>
-          <FooterLink id="contact">Contacto</FooterLink>
+          <FooterLink id="home">{t("navbar.home")}</FooterLink>
+          <FooterLink id="about">{t("navbar.about")}</FooterLink>
+          <FooterLink id="works">{t("navbar.works")}</FooterLink>
+          <FooterLink id="services">{t("navbar.services")}</FooterLink>
+          <FooterLink id="contact">{t("navbar.contact")}</FooterLink>
         </div>
 
         <div className="footer-column">
-          <h3>Links</h3>
+          <h3>{t("footer.sections.links")}</h3>
           <hr className="footer-divider" />
           <a
             href="https://github.com/MarcosCrRodriguez"
@@ -67,17 +69,16 @@ const Footer = () => {
         </div>
 
         <div className="footer-column">
-          <h3>Contacto</h3>
+          <h3>{t("footer.sections.contact")}</h3>
           <hr className="footer-divider" />
-          {/* <FooterLink id="contact">Formulario</FooterLink> */}
-          <p>Buenos Aires, Argentina</p>
+          <p>{t("footer.location")}</p>
           <p>programmer.crod@gmail.com</p>
-          <p>Disponible para proyectos freelance</p>
+          <p>{t("footer.availability")}</p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 Marcos Cruz Rodriguez</p>
+        <p>{t("footer.copyright")}</p>
       </div>
     </footer>
   );

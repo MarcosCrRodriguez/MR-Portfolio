@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./Works.css";
 import projects from "../../assets/data/projects";
 
 const Works = () => {
   const [showAll, setShowAll] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const visibleProjects = showAll ? projects : projects.slice(0, 6);
 
@@ -13,12 +15,8 @@ const Works = () => {
 
   return (
     <section id="works" className="projects-section">
-      <h2 className="projects-title">Trabajos</h2>
-      <p className="projects-description">
-        Aquí puedes explorar algunos de los proyectos en los que he trabajado,
-        abarcando desarrollos personales, colaborativos y de diversa
-        complejidad. Cada uno refleja mi pasión por la tecnología y el diseño.
-      </p>
+      <h2 className="projects-title">{t("works.title")}</h2>
+      <p className="projects-description">{t("works.description")}</p>
 
       <div className="projects-grid">
         {projects.map((project, index) => {
@@ -37,12 +35,12 @@ const Works = () => {
             >
               <img
                 src={project.image}
-                alt={project.title}
+                alt={project.title[i18n.language]}
                 className="project-image"
               />
               <div className="project-info">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
+                <h3>{project.title[i18n.language]}</h3>
+                <p>{project.description[i18n.language]}</p>
               </div>
             </a>
           );
@@ -52,7 +50,7 @@ const Works = () => {
       {projects.length > 6 && (
         <div className="show-more-container">
           <button className="show-more-button" onClick={toggleShow}>
-            {showAll ? "Mostrar menos ▲" : "Mostrar más ▼"}
+            {showAll ? t("works.showLess") : t("works.showMore")}
           </button>
         </div>
       )}

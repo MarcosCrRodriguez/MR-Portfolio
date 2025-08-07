@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,15 +21,14 @@ const Contact = () => {
 
   const validate = () => {
     const newErrors = {};
-    if (!formData.name) newErrors.name = "El nombre es obligatorio";
+    if (!formData.name) newErrors.name = t("contact.errors.name");
     if (!formData.email) {
-      newErrors.email = "El email es obligatorio";
+      newErrors.email = t("contact.errors.emailRequired");
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Formato de email inválido";
+      newErrors.email = t("contact.errors.emailInvalid");
     }
-    if (!formData.subject) newErrors.subject = "El asunto es obligatorio";
-    if (!formData.message)
-      newErrors.message = "El mensaje no puede estar vacío";
+    if (!formData.subject) newErrors.subject = t("contact.errors.subject");
+    if (!formData.message) newErrors.message = t("contact.errors.message");
     return newErrors;
   };
 
@@ -64,21 +65,18 @@ const Contact = () => {
       })
       .catch((error) => {
         console.error("Error al enviar el formulario:", error);
-        alert("Ocurrió un error. Intentalo nuevamente.");
+        alert(t("contact.errors.sendError"));
       });
   };
 
   return (
     <section id="contact" className="contact-section">
-      <h2 className="contact-title">Contacto</h2>
-      <p className="contact-description">
-        Si tenés alguna consulta, propuesta o simplemente querés saludar,
-        completá el formulario y te responderé lo antes posible.
-      </p>
+      <h2 className="contact-title">{t("contact.title")}</h2>
+      <p className="contact-description">{t("contact.description")}</p>
 
       <form className="contact-form" onSubmit={handleSubmit} noValidate>
         <div className="form-group">
-          <label htmlFor="name">Nombre *</label>
+          <label htmlFor="name">{t("contact.labels.name")} *</label>
           <input
             type="text"
             name="name"
@@ -90,7 +88,7 @@ const Contact = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="email">Correo electrónico *</label>
+          <label htmlFor="email">{t("contact.labels.email")} *</label>
           <input
             type="email"
             name="email"
@@ -102,7 +100,7 @@ const Contact = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="subject">Asunto *</label>
+          <label htmlFor="subject">{t("contact.labels.subject")} *</label>
           <input
             type="text"
             name="subject"
@@ -114,7 +112,7 @@ const Contact = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="message">Mensaje *</label>
+          <label htmlFor="message">{t("contact.labels.message")} *</label>
           <textarea
             name="message"
             rows="6"
@@ -126,13 +124,10 @@ const Contact = () => {
         </div>
 
         <button type="submit" className="submit-button">
-          Enviar mensaje
+          {t("contact.sendButton")}
         </button>
 
-        {/* Mensaje de éxito */}
-        {sent && (
-          <p className="success-message">Mensaje enviado correctamente.</p>
-        )}
+        {sent && <p className="success-message">{t("contact.success")}</p>}
       </form>
     </section>
   );

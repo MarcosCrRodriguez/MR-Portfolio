@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import PortfolioIcon from "../../assets/profile.jpg";
 import { FiDownload } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 const scrollToId = (id) => {
   const element = document.getElementById(id);
@@ -11,32 +12,25 @@ const scrollToId = (id) => {
 };
 
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="home" className="home-section">
-      <img
-        src={PortfolioIcon}
-        alt="Foto de Marcos Cruz Rodriguez"
-        className="home-image"
-      />
-      <h1 className="home-name">Marcos Cruz Rodriguez</h1>
-      <h2 className="home-subtitle">Full-Stack Developer en Argentina</h2>
-      <p className="home-description">
-        Soy desarrollador Full-Stack de Buenos Aires, Argentina, con varios años
-        de experiencia tanto en programación back-end como front-end. Busco
-        nuevas oportunidades para seguir perfeccionando mis habilidades y
-        contribuir a proyectos innovadores.
-      </p>
+      <img src={PortfolioIcon} alt={t("home.title")} className="home-image" />
+      <h1 className="home-name">{t("home.title")}</h1>
+      <h2 className="home-subtitle">{t("home.subtitle")}</h2>
+      <p className="home-description">{t("home.description")}</p>
 
       <div className="home-buttons">
         <a
           className="home-button primary"
           onClick={() => scrollToId("contact")}
         >
-          Contacta conmigo
+          {t("home.contactButton")}
         </a>
         <a href="/cv.pdf" download className="home-button secondary">
           <FiDownload style={{ marginRight: "8px" }} />
-          Mi CV
+          {t("home.cvButton")}
         </a>
       </div>
     </section>
