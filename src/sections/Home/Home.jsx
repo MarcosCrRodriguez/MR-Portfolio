@@ -12,7 +12,11 @@ const scrollToId = (id) => {
 };
 
 const Home = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  // Determinar el archivo a descargar según el idioma actual
+  const currentLang = i18n.language;
+  const cvFile = currentLang === "en" ? "/cv-en.pdf" : "/cv-es.pdf";
 
   return (
     <section id="home" className="home-section">
@@ -28,7 +32,7 @@ const Home = () => {
         >
           {t("home.contactButton")}
         </a>
-        <a href="/cv.pdf" download className="home-button secondary">
+        <a href={cvFile} download className="home-button secondary">
           <FiDownload style={{ marginRight: "8px" }} />
           {t("home.cvButton")}
         </a>
