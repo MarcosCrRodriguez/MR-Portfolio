@@ -1,6 +1,7 @@
 .contact-section {
   padding: 12px 24px;
   text-align: center;
+  color: #1d1d1d;
 }
 
 .contact-title {
@@ -10,9 +11,10 @@
 }
 
 .contact-description {
+  text-align: justify;
+  hyphens: auto;
   font-size: 1.1rem;
   font-family: "DM Sans", sans-serif;
-  color: #444;
   max-width: 600px;
   margin: 0 auto 40px auto;
 }

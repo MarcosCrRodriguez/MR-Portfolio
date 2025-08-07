@@ -13,6 +13,8 @@
 .projects-description {
   max-width: 800px;
   margin: 0 auto 48px;
+  text-align: justify;
+  hyphens: auto;
   font-size: 1.1rem;
   line-height: 1.6;
   font-family: "DM Sans", sans-serif;
@@ -52,7 +54,8 @@
 
 .project-info {
   padding: 2px 20px;
-  text-align: left;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .project-info h3 {

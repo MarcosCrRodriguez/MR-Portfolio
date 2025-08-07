@@ -13,6 +13,8 @@
 .services-description {
   max-width: 800px;
   margin: 0 auto 48px;
+  text-align: justify;
+  hyphens: auto;
   font-size: 1.1rem;
   font-family: "DM Sans", sans-serif;
   line-height: 1.6;
