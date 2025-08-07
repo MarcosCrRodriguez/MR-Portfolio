@@ -35,8 +35,9 @@
 }
 
 .skill-category {
-  width: 120px !important;
+  width: 180px !important;
   text-align: left;
+  margin: 0 auto;
 }
 .skill-category h3 {
   font-size: 1.4rem;
@@ -90,6 +91,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+  }
+
+  .skill-category {
+    width: 120px !important;
   }
 
   .skill-category li {
