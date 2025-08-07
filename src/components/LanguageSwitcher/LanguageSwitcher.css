@@ -12,14 +12,15 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #6c63ff;
-  color: #fff;
+  background-color: #f1eaff;
+  color: #000;
   border: none;
   font-weight: bold;
   cursor: pointer;
   font-size: 0.9rem;
   transition: transform 0.2s, opacity 0.3s;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  font-family: "DM Sans", sans-serif !important;
 }
 
 .lang-circle:hover {
@@ -28,7 +29,7 @@
 }
 
 .lang-circle.active {
-  background-color: #847dff; /* tono más claro o diferente */
+  background-color: #eae0ff; /* tono más claro o diferente */
   transform: scale(1.15); /* más grande que el normal */
   opacity: 1;
   box-shadow: 0 4px 12px rgba(108, 99, 255, 0.5);
