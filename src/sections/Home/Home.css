@@ -76,6 +76,9 @@
 }
 
 @media (max-width: 768px) {
+  .home-subtitle {
+    font-size: 1.3rem;
+  }
   .home-section {
     padding: 60px 24px;
   }

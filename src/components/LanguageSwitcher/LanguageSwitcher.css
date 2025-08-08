@@ -1,7 +1,7 @@
 .floating-language-buttons {
   position: fixed;
-  top: 102px; /* ligeramente debajo del navbar */
-  right: 16px;
+  bottom: 20px; /* ahora está en la parte inferior */
+  left: 20px; /* y alineado a la izquierda */
   display: flex;
   flex-direction: column;
   gap: 10px;

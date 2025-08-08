@@ -131,6 +131,9 @@
 
 /* Responsive */
 @media (max-width: 1280px) {
+  .logo-img {
+    height: 62px !important;
+  }
   .nz-menu {
     display: none;
   }
