@@ -86,3 +86,9 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 330px) {
+  .home-description {
+    font-size: 0.9rem;
+  }
+}

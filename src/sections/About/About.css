@@ -105,3 +105,25 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 330px) {
+  .about-skills {
+    gap: 12px;
+  }
+
+  .skill-category {
+    width: 110px !important;
+  }
+
+  .skill-category h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill-category li {
+    font-size: 0.9rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+  }
+}

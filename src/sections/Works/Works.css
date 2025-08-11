@@ -128,3 +128,19 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 330px) {
+  .projects-description {
+    font-size: 0.9rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+  }
+
+  .project-info p {
+    font-size: 0.85rem;
+  }
+}

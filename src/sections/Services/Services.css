@@ -92,6 +92,10 @@
     font-size: 1rem;
   }
 
+  .service-card {
+    padding: 2px;
+  }
+
   .services-list {
     display: flex;
     flex-wrap: wrap;
@@ -99,5 +103,15 @@
     gap: 2px;
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .services-description {
+    font-size: 0.9rem;
   }
 }
