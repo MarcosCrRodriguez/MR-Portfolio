@@ -11,87 +11,15 @@ import zyImg from "../images/zy-bg.png";
 const projects = [
   {
     title: {
-      es: "Street Fighter - Rescue",
-      en: "Street Fighter - Rescue",
+      es: "ZY – Plataforma de becas y finanzas",
+      en: "ZY – Scholarships & Finance Platform",
     },
     description: {
-      es: "Juego de lucha inspirado en Street Fighter, proyecto personal programado en Python (con Pygame).",
-      en: "Fighting game inspired by Street Fighter, a personal project coded in Python (with Pygame).",
+      es: "ZY te ayuda a buscar becas, planear tu presupuesto y crecer profesionalmente.",
+      en: "ZY helps you find scholarships, plan your budget and grow professionally.",
     },
-    image: pygameImg,
-    link: "https://www.youtube.com/watch?v=GRXQdSPsfF4",
-  },
-  {
-    title: {
-      es: "Usuarios y Stock",
-      en: "Users and Inventory",
-    },
-    description: {
-      es: "Un sistema de Windows Forms para gestión de usuarios, carga y descarga de materiales (materias primas / productos terminados).",
-      en: "A Windows Forms system for user management and material handling (raw materials / finished products).",
-    },
-    image: stockImg,
-    link: "https://www.youtube.com/watch?v=B1gitUJAib8",
-  },
-  {
-    title: {
-      es: "Perfy Drinks",
-      en: "Perfy Drinks",
-    },
-    description: {
-      es: "Sitio de bebidas energéticas, con carrito de compras y simulación de compra.",
-      en: "Energy drink website with shopping cart and simulated checkout.",
-    },
-    image: perfyImg,
-    link: "https://perfy-drinks.netlify.app/",
-  },
-  {
-    title: {
-      es: "Sala de Juegos",
-      en: "Game Room",
-    },
-    description: {
-      es: "Sitio donde podrás encontrar distintos juegos, sección de ranking y foro para comentar.",
-      en: "Site featuring various games, ranking section and a discussion forum.",
-    },
-    image: gamesImg,
-    link: "https://angular-game-cdb9d.web.app/home",
-  },
-  {
-    title: {
-      es: "Clínica Salud",
-      en: "Clinic Health",
-    },
-    description: {
-      es: "Sistema web para turnos y administración de clínica médica.",
-      en: "Web system for appointment scheduling and clinic management.",
-    },
-    image: clinicasaludImg,
-    link: "https://clinicasalud-app.web.app/home",
-  },
-  {
-    title: {
-      es: "Sitio Fórmula 1",
-      en: "Formula 1 Website",
-    },
-    description: {
-      es: "Landing page temática inspirada en actuales y pasadas temporadas de Fórmula 1, mostrando información de pilotos, autos y resultados.",
-      en: "Themed landing page inspired by past and current Formula 1 seasons, showcasing driver, car and result data.",
-    },
-    image: formulaoneImg,
-    link: "https://formulaone-angular.netlify.app/",
-  },
-  {
-    title: {
-      es: "FanPage de Arcane",
-      en: "Arcane FanPage",
-    },
-    description: {
-      es: "Landing page temática inspirada en la serie de League of Legends.",
-      en: "Themed landing page inspired by the League of Legends series.",
-    },
-    image: arcanefanpageImg,
-    link: "https://angular-arcanefanpage.netlify.app/presentacion",
+    image: zyImg,
+    link: "https://tryzy.app/",
   },
   {
     title: {
@@ -107,15 +35,87 @@ const projects = [
   },
   {
     title: {
-      es: "ZY – Plataforma de becas y finanzas",
-      en: "ZY – Scholarships & Finance Platform",
+      es: "FanPage de Arcane",
+      en: "Arcane FanPage",
     },
     description: {
-      es: "ZY te ayuda a buscar becas, planear tu presupuesto y crecer profesionalmente.",
-      en: "ZY helps you find scholarships, plan your budget and grow professionally.",
+      es: "Landing page temática inspirada en la serie de League of Legends.",
+      en: "Themed landing page inspired by the League of Legends series.",
     },
-    image: zyImg,
-    link: "https://tryzy.app/",
+    image: arcanefanpageImg,
+    link: "https://angular-arcanefanpage.netlify.app/presentacion",
+  },
+  {
+    title: {
+      es: "Sitio Fórmula 1",
+      en: "Formula 1 Website",
+    },
+    description: {
+      es: "Landing page temática inspirada en actuales y pasadas temporadas de Fórmula 1, mostrando información de pilotos, autos y resultados.",
+      en: "Themed landing page inspired by past and current Formula 1 seasons, showcasing driver, car and result data.",
+    },
+    image: formulaoneImg,
+    link: "https://formulaone-angular.netlify.app/",
+  },
+  {
+    title: {
+      es: "Clínica Salud",
+      en: "Clinic Health",
+    },
+    description: {
+      es: "Sistema web para turnos y administración de clínica médica.",
+      en: "Web system for appointment scheduling and clinic management.",
+    },
+    image: clinicasaludImg,
+    link: "https://clinicasalud-app.web.app/home",
+  },
+  {
+    title: {
+      es: "Sala de Juegos",
+      en: "Game Room",
+    },
+    description: {
+      es: "Sitio donde podrás encontrar distintos juegos, sección de ranking y foro para comentar.",
+      en: "Site featuring various games, ranking section and a discussion forum.",
+    },
+    image: gamesImg,
+    link: "https://angular-game-cdb9d.web.app/home",
+  },
+  {
+    title: {
+      es: "Perfy Drinks",
+      en: "Perfy Drinks",
+    },
+    description: {
+      es: "Sitio de bebidas energéticas, con carrito de compras y simulación de compra.",
+      en: "Energy drink website with shopping cart and simulated checkout.",
+    },
+    image: perfyImg,
+    link: "https://perfy-drinks.netlify.app/",
+  },
+  {
+    title: {
+      es: "Usuarios y Stock",
+      en: "Users and Inventory",
+    },
+    description: {
+      es: "Un sistema de Windows Forms para gestión de usuarios, carga y descarga de materiales (materias primas / productos terminados).",
+      en: "A Windows Forms system for user management and material handling (raw materials / finished products).",
+    },
+    image: stockImg,
+    link: "https://www.youtube.com/watch?v=B1gitUJAib8",
+  },
+  {
+    title: {
+      es: "Street Fighter - Rescue",
+      en: "Street Fighter - Rescue",
+    },
+    description: {
+      es: "Juego de lucha inspirado en Street Fighter, proyecto personal programado en Python (con Pygame).",
+      en: "Fighting game inspired by Street Fighter, a personal project coded in Python (with Pygame).",
+    },
+    image: pygameImg,
+    link: "https://www.youtube.com/watch?v=GRXQdSPsfF4",
   },
 ];
 
