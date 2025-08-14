@@ -7,8 +7,21 @@ import formulaoneImg from "../images/formulaone.png";
 import arcanefanpageImg from "../images/arcanefanpage.png";
 import palImg from "../images/pal.png";
 import zyImg from "../images/zy-bg.png";
+import lineaNobleImg from "../images/linea-noble.png";
 
 const projects = [
+  {
+    title: {
+      es: "Línea Noble · Estilo masculino con carácter",
+      en: "Línea Noble · Menswear with Character",
+    },
+    description: {
+      es: "Descubrí una colección de ropa para hombres que combina elegancia, comodidad y personalidad. Prendas para cada ocasión, con estilo propio.",
+      en: "Explore a menswear collection that blends elegance, comfort, and personality. Pieces for every moment, with distinct style.",
+    },
+    image: lineaNobleImg,
+    link: "https://linea-noble.netlify.app/",
+  },
   {
     title: {
       es: "ZY – Plataforma de becas y finanzas",
